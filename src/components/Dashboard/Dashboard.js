@@ -8,7 +8,7 @@ import ManageAllOrders from "../ManageAllOrders/ManageAllOrders";
 import ManageProducts from "../ManageProducts/ManageProducts";
 import MyOrders from "../MyOrders/MyOrders";
 import Pay from "../Pay/Pay";
-// import Dashboard from "../Dashboard/Dashboard";
+
 import Review from "../Review/Review";
 
 

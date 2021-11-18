@@ -25,7 +25,7 @@ const Product = () => {
                                 <p>{pd.description}</p>
                                 <p>{pd.price}</p>
                                 <Link to={`/purchase/${pd._id}`}>
-                                    {/* {" "} */}
+                                    
                                     <button className="btn btn-success">Purchase Now</button>
                                 </Link>
                             </div>

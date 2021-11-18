@@ -6,7 +6,7 @@ const MyOrders = () => {
     // const {user} = useFirebase();
     const {user} = useAuth();
     const{email} = user;
-    // const email = sessionStorage.getItem("email");
+    
     const [services, setServices] = useState([]);
 
     const [control, setControl] = useState(false);

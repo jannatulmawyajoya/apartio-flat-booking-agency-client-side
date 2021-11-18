@@ -1,14 +1,4 @@
-// import React from 'react';
 
-// const Banner = () => {
-//     return (
-//         <div>
-            
-//         </div>
-//     );
-// };
-
-// export default Banner;
 
 import React from 'react';
 // import MenuBar from "../MenuBar/MenuBar";

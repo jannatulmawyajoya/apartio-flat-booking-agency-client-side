@@ -1,6 +1,6 @@
 import React  from "react";
 // import { Alert } from "react-bootstrap";
-// import from from "./AddReview.css";
+
 import { useForm } from "react-hook-form";
 import useFirebase from "../../hooks/useFirebase";
 

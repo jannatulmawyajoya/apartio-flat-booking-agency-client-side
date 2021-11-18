@@ -23,9 +23,7 @@ const Menubar = () => {
                         <Nav.Link as={Link} to="/services"> Services</Nav.Link>
                         {/* <Nav.Link as={Link} to="/addService">Add Service</Nav.Link> */}
                        
-                        {/* <Nav.Link as={Link} to={`/myorder/${user.email}`}>My Order</Nav.Link> */}
-                        {/* <Link to={`/myorder/${user.email}`}>My Order</Link> */}
-                        {/* <Nav.Link as={Link} to="/manageAllOrders">Manage All Orders</Nav.Link> */}
+                        
                         <Nav.Link as={Link} to="/dashboard">Dashboard</Nav.Link>
                        
                        
@@ -56,36 +54,17 @@ const Menubar = () => {
 
 
 
-                        {/* {user?.email ?
-                            <Nav.Link as={Link} to="/manageAllOrders">Manage All Orders</Nav.Link> :
-                            <Nav.Link as={Link} to="/login">Login</Nav.Link>
+                        
 
-                        } */}
+                        
 
-                        {/* {user?.email ?
-
-                            <Button onClick={logOut} variant="primary">LogOut</Button> :
-                            <Nav.Link as={Link} to="/login">Login</Nav.Link>
-
-                        } */}
-
-                        {/* {(user?.email){
-                            <Nav.Link as={Link} to="/addService">Add Service</Nav.Link> &&
-                            <Nav.Link as={Link} to={`/myorder/${user.email}`}>My Order</Nav.Link> &&
-                            <Nav.Link as={Link} to="/manageAllOrders">Manage All Orders</Nav.Link>
-                        }
-                        {
-                            <Nav.Link as={Link} to="/login">Login</Nav.Link>
-                        }} */}
+                        
 
 
 
 
 
-
-                        {/* <Navbar.Text>
-                            <a href="#login">{user?.displayName}</a>
-                        </Navbar.Text> */}
+                       
                     </Navbar.Collapse>
 
                 </Container>
