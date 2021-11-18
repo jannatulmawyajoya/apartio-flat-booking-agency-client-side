@@ -14,7 +14,8 @@ import MyOrders from './components/MyOrders/MyOrders';
 import Pay from './components/Pay/Pay';
 import AddReview from './components/AddReview/AddReview';
 import Review from './components/Review/Review';
-// import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Dashboard from './components/Dashboard/Dashboard';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 
 function App() {
@@ -46,42 +47,22 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
+            <Route path="/dashboard">
+              <Dashboard></Dashboard>
+            </Route>
             <Route path="/pay">
               <Pay></Pay>
             </Route>
             <Route path="/reviews">
               <Review></Review>
             </Route>
-            <Route exact path="/purchase/:productId">
+            <PrivateRoute exact path="/purchase/:productId">
               <Purchase></Purchase>
-            </Route>
+            </PrivateRoute>
             <Route exact path="/myOrder">
               <MyOrders></MyOrders>
             </Route>
-            {/* <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
-          <PrivateRoute path="/myorder/:email">
-            <MyOrder></MyOrder>
-          </PrivateRoute>
-          <PrivateRoute path="/manageAllOrders">
-            <ManageAllOrder></ManageAllOrder>
-          </PrivateRoute>
-          <Route path="/about">
-            <AboutUs></AboutUs>
-          </Route>
-          <PrivateRoute path="/order/:orderId">
-            <Order></Order>
-          </PrivateRoute>
-          <Route path="/services">
-            <Offerings></Offerings>
-          </Route>
-          <PrivateRoute path="/addService">
-            <AddService></AddService>
-          </PrivateRoute>
+            {/* 
           <Route path="*">
             <NotFound></NotFound>
           </Route> */}

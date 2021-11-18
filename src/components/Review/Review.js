@@ -12,8 +12,8 @@ const Review = () => {
     },[]);
     console.log(reviews);
     return (
-        <div>
-            <h1>Reviews</h1>
+        <div className="container">
+            <h1 className="text-secondary m-3"> Customer's Reviews</h1>
             <div className="services">
                 <div className="row container">
                     {reviews?.map((pd, index) => (

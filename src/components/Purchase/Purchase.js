@@ -33,7 +33,7 @@ const Purchase = () => {
 
     const onSubmit = (data) => {
         data.email = user?.email;
-        // data.status = "pending";
+        data.status = "pending";
 
         fetch("http://localhost:5000/confirmOrder", {
             method: "POST",
@@ -42,6 +42,7 @@ const Purchase = () => {
         })
             .then((res) => res.json())
             .then((result) => console.log(result));
+        alert('Order Confirmed Successfully')
         console.log(data);
     };
 
@@ -57,7 +58,7 @@ const Purchase = () => {
                         </div>
                         <h2>{service?.name}</h2>
                         <p className="text-start">{service?.description}</p>
-                        <h5> price: {service?.price} $</h5>
+                        <h5> price: {service?.price} </h5>
                        
                     </div>
                     <div className="col-md-6">
@@ -65,21 +66,21 @@ const Purchase = () => {
                         <form onSubmit={handleSubmit(onSubmit)}>
 
                             <input
-                                {...register("name")}
+                                {...register("name", { required: true })}
                                 value={service?.name}
                                 className="p-2 m-2"
                                 className="p-2 m-2 w-100"
                             />
                             <br />
                             <input
-                                {...register("userName")}
+                                {...register("userName", { required: true })}
                                 value={user?.displayName}
                                 className="p-2 m-2"
                                 className="p-2 m-2 w-100"
                             />
                             <br />
                             <input
-                                {...register("userEmail")}
+                                {...register("userEmail", { required: true })}
                                 value={user?.email}
                                 className="p-2 m-2"
                                 className="p-2 m-2 w-100"
@@ -87,7 +88,7 @@ const Purchase = () => {
                             <br />
 
                             <input
-                                {...register("description")}
+                                {...register("description", { required: true })}
                                 value={service?.description}
                                 className="p-2 m-2 w-100"
                             />
@@ -106,14 +107,14 @@ const Purchase = () => {
                             <br /> */}
 
                             <input
-                                {...register("address")}
+                                {...register("address", { required: true })}
                                 placeholder="Address"
                                 className="p-2 m-2"
                                 className="p-2 m-2 w-100"
                             />
                             <br />
                             <input
-                                {...register("phone")}
+                                {...register("phone", { required: true })}
                                 placeholder="Phone"
                                 className="p-2 m-2"
                                 className="p-2 m-2 w-100"

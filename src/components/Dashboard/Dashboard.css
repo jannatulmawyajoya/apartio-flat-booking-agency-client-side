@@ -1,0 +1,22 @@
+.dashboard-container{
+    overflow-x: hidden;
+}
+.dashboard {
+  background-color: lightgray;
+  height: 100vh;
+  color: black;
+  cursor: pointer;
+}
+.dashboard-menu {
+  list-style: none;
+  margin-top: 10px;
+  /* text-decoration: black;
+  color: black; */
+  /* text-decoration: ; */
+}
+/* .dashboard-menu li{
+ text-decoration: none;
+} */
+/* .dashboard-menu:hover {
+  color: cyan;
+} */

@@ -20,6 +20,7 @@ const AddService = () => {
         })
             .then((res) => res.json())
             .then((result) => console.log(result));
+            alert('Services added successfully')
         console.log(data);
     };
     return (
@@ -31,13 +32,13 @@ const AddService = () => {
                         <div className="">
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 <input
-                                    {...register("name")}
+                                    {...register("name", { required: true })}
                                     placeholder="Name"
                                     className="p-2 m-2 w-100 input-field"
                                 />
 
                                 <input
-                                    {...register("description")}
+                                    {...register("description", { required: true })}
                                     placeholder="Description"
                                     className="p-2 m-2 w-100 input-field"
                                 />
