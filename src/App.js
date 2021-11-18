@@ -11,6 +11,9 @@ import Register from './components/Register/Register';
 import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import Purchase from './components/Purchase/Purchase';
 import MyOrders from './components/MyOrders/MyOrders';
+import Pay from './components/Pay/Pay';
+import AddReview from './components/AddReview/AddReview';
+import Review from './components/Review/Review';
 // import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 
@@ -31,6 +34,9 @@ function App() {
             <Route path="/addService">
               <AddService></AddService>
             </Route>
+            <Route path="/addReview">
+              <AddReview></AddReview>
+            </Route>
             <Route path="/services">
               <Services></Services>
             </Route>
@@ -39,6 +45,12 @@ function App() {
             </Route>
             <Route path="/register">
               <Register></Register>
+            </Route>
+            <Route path="/pay">
+              <Pay></Pay>
+            </Route>
+            <Route path="/reviews">
+              <Review></Review>
             </Route>
             <Route exact path="/purchase/:productId">
               <Purchase></Purchase>
